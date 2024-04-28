@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB-115 Final Project</title>
+<script src="projectJS.js" defer></script>
+<link rel="stylesheet" href="meal.css">
+</head>
+
+<body>
+<header>
+    <div class="banner">
+        <div class="right-banner">
+            <p>Name: <strong>Nathan Wilson</strong></p>
+            <p>Course: WEB 115</p>
+            <p>Section: 0001</p>
+        </div>
+        <h1 class="left-banner">Build Your Meal Plan</h1>
+    </div>
+</header>
+<hr>
+<form id = "mealForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Please enter your name." name="name" />
+    <br>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Please enter your email." name="email" required/><span class="info">(* required)</span>
+    <br>
+    <label for="goal">Weekly Goal</label>
+    <textarea rows="3" cols="70" id="goal" placeholder="Please enter your goal for the week." name="goal"></textarea>
+    <hr>
+
+    <table>
+        <thead></thead><tr><th></th><th>Breakfast</th><th>Snack</th><th>Lunch</th><th>Snack</th><th>Supper</th></tr></thead>
+        <tr id="mon"><th>Monday</th><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>
+        <tr id="tue"><th>Tuesday</th><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>
+        <tr id="wed"><th>Wednesday</th><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>
+        <tr id="thu"><th>Thursday</th><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>
+        <tr id="fri"><th>Friday</th><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>
+        <tr id="sat"><th>Saturday</th><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>
+        <tr id="sun"><th>Sunday</th><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>
+    </table>
+    <hr>
+    <input type="reset" id="clear" value="Clear Form">
+    <br>
+    <input type="button" id="create" value="Show Meal Plan in New Window">
+    <br>
+    <input type="button" id="download" value="Generate Downloadable Meal Plan">
+    <div id="linkWrapper" style="display:none"><a id="downloadLink" target="_blank">Click Here To Download</a></div>
+
+</form>
+
+</body>
+</html>

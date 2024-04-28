@@ -1,0 +1,28 @@
+.right-banner {
+    float: right;
+    font-size: 0.8em;
+}
+
+.left-banner {
+    height: 3.5em;
+}
+
+.banner {
+    background-color: blueviolet;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.info {
+    font-weight: lighter;
+    font-size: small;
+    color:red;
+}
+
+label {
+    width: 120px;
+    display:inline-block;
+    text-align: right;
+}
